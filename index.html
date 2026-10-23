@@ -8,7 +8,7 @@
 <meta name="description" content="Marko Mićić, astrophysicist at the University of Oklahoma: intermediate-mass black holes, interacting dwarf galaxies, galaxy evolution, hierarchical cosmology and gravitational lensing.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
 <style>
 /* Layout: dark sky hero, then one reading column with a mono left rail; research is a grid of result cards, each led by a small dark "sky panel" figure. */
 :root{
@@ -50,10 +50,10 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .hero{position:relative;background:var(--sky);color:var(--sky-ink);overflow:hidden}
 #field{position:absolute;inset:0;width:100%;height:100%;display:block}
 .hero .wrap{position:relative;padding-block:clamp(72px,12vw,150px) clamp(56px,8vw,96px)}
-.aff{font:400 12px/1.6 var(--f-mono);letter-spacing:.06em;color:#8f99bd}
+.aff{font:400 clamp(17px,2vw,21px)/1.45 var(--f-body);color:#cfd5ea;margin:0 0 24px}
 .aff b{color:#f2a65a;font-weight:500}
-h1{font:400 clamp(58px,11vw,132px)/.92 var(--f-display);letter-spacing:-.01em;margin:16px 0 26px}
-h1 em{font-style:italic;color:#f2a65a}
+h1{font:400 clamp(54px,10vw,124px)/.95 var(--f-display);letter-spacing:-.01em;margin:0 0 18px;text-wrap:balance}
+h1 em{font-style:normal;color:#f2a65a}
 .kw{list-style:none;margin:0 0 34px;padding:0;display:flex;flex-wrap:wrap;gap:6px 0;max-width:46rem;font:400 italic clamp(19px,2.3vw,24px)/1.35 var(--f-display);color:#cfd5ea}
 .kw li:not(:last-child)::after{content:"·";margin:0 .55em;color:#5f6a8f;font-style:normal}
 .cta{display:flex;flex-wrap:wrap;gap:10px}
@@ -128,6 +128,8 @@ p{margin:0 0 16px;max-width:66ch}
 .copy:hover{border-color:var(--accent);color:var(--accent)}
 footer{padding-block:36px 48px;font:400 12px/1.6 var(--f-mono);color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+
 </style>
 
 </head>
@@ -146,11 +148,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 <header class="hero" id="top">
   <canvas id="field" aria-hidden="true"></canvas>
   <div class="wrap">
+    <h1>Dr. Marko <em>Mićić</em></h1>
     <div class="aff">Dodge Family Postdoctoral Fellow · <b>University of Oklahoma</b></div>
-    <h1>Marko <em>Mićić</em></h1>
     <ul class="kw">
       <li>Intermediate-mass black holes</li>
-      <li>Interacting dwarfs</li>
+      <li>Dwarf galaxy interactions</li>
       <li>Galaxy evolution</li>
       <li>Hierarchical cosmology</li>
       <li>Gravitational lensing</li>
@@ -172,7 +174,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
       <p>In a hierarchical universe, big things are assembled from small ones. Dwarf galaxies were the most common galaxies in the early Universe, and their mergers and interactions are where massive galaxies and the first supermassive black holes began to grow. I study that process at its low-mass end, where it can still be observed directly in the nearby and intermediate-redshift Universe.</p>
       <p>Much of my work asks how black holes grow when galaxies meet. I look for intermediate-mass black holes and faint AGN in dwarf galaxies, in dwarf–dwarf pairs and groups, and in the smaller partner of minor mergers, where simulations predict brief bursts of rapid growth. These systems connect the seed black holes of the early Universe to the supermassive black holes we see today.</p>
       <p>I also follow what interactions do to the galaxies themselves: when they trigger star formation, when they bury it in dust, and when they shut it down, and whether groups of dwarfs are bound structures on their way to building something larger. To reach the faintest black holes at cosmic noon, I use gravitational lensing by galaxy clusters to magnify sources that X-ray surveys would otherwise miss.</p>
-      <p>My work combines X-ray, optical and infrared data, mainly from Chandra, Hubble, JWST, Gemini and DESI.</p>
+      <p>My work combines X-ray, optical and infrared data, mainly from Chandra, Hubble, JWST and Gemini, together with large-scale spectroscopic surveys.</p>
     </div>
   </div>
 </section>
@@ -274,7 +276,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
             </svg>
           </div>
           <div class="body">
-            <div class="topic">Interacting dwarfs · galaxy evolution</div>
+            <div class="topic">Dwarf galaxy interactions · galaxy evolution</div>
             <h3>DESI Interacting Dwarfs Survey</h3>
             <dl>
               <dt>Idea</dt><dd>Measure how dwarf–dwarf interactions change star formation across stellar mass (log M★ 6.5–9.5), redshift (out to z ≈ 1.5) and external tidal environment.</dd>
