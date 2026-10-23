@@ -8,25 +8,25 @@
 <meta name="description" content="Marko Mićić, astrophysicist at the University of Oklahoma: intermediate-mass black holes, interacting dwarf galaxies, galaxy evolution, hierarchical cosmology and gravitational lensing.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: dark sky hero, then one reading column with a mono left rail; research is a grid of result cards, each led by a small dark "sky panel" figure. */
 :root{
-  --bg:#f1f5f5; --surface:#ffffff; --ink:#0f1c1f; --muted:#536769; --line:#d3dfdf;
-  --accent:#0e7a70; --accent-soft:#dcf1ee;
-  --sky:#0a1620; --sky-ink:#e9ecf6;
+  --bg:#f3f4f8; --surface:#ffffff; --ink:#141a2e; --muted:#5b6380; --line:#d9dce8;
+  --accent:#b8600f; --accent-soft:#f6e6d5;
+  --sky:#0d1326; --sky-ink:#e9ecf6;
   /* figure panels are always dark sky, in both themes */
-  --fig-bg:#0a1620; --fig-ink:#cfe0e2; --fig-dim:#56737a; --fig-warm:#f0778b; --fig-cool:#8fb2ff; --fig-red:#e0705a; --fig-star:#e8ecff;
-  --f-display:"Archivo", "Helvetica Neue", Arial, sans-serif;
-  --f-body:"IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
-  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --fig-bg:#0d1326; --fig-ink:#c9d0e8; --fig-dim:#5f6a8f; --fig-warm:#f2a65a; --fig-cool:#8fb2ff; --fig-red:#e0705a; --fig-star:#e8ecff;
+  --f-display:"Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --f-body:"Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#07121a; --surface:#0d1d26; --ink:#e3eeee; --muted:#91a8ac; --line:#1b3039;
-  --accent:#5fd4c4; --accent-soft:#123a3a; --sky:#050e15; --fig-bg:#06111a; color-scheme:dark}}
+  --bg:#0b1020; --surface:#121933; --ink:#e7eaf5; --muted:#98a0bd; --line:#232c4a;
+  --accent:#f2a65a; --accent-soft:#2a2138; --sky:#070b18; --fig-bg:#080d1d; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#07121a; --surface:#0d1d26; --ink:#e3eeee; --muted:#91a8ac; --line:#1b3039;
-  --accent:#5fd4c4; --accent-soft:#123a3a; --sky:#050e15; --fig-bg:#06111a; color-scheme:dark}
+  --bg:#0b1020; --surface:#121933; --ink:#e7eaf5; --muted:#98a0bd; --line:#232c4a;
+  --accent:#f2a65a; --accent-soft:#2a2138; --sky:#070b18; --fig-bg:#080d1d; color-scheme:dark}
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -43,24 +43,24 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .nav .wrap{display:flex;justify-content:flex-end;min-height:52px;align-items:center}
 .nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
 .nav ul::-webkit-scrollbar{display:none}
-.nav ul a{display:block;padding:8px 12px;font:500 12px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:#a3bcc0;text-decoration:none;border-radius:4px;white-space:nowrap}
-.nav ul a:hover,.nav ul a.on{color:#5fd4c4}
+.nav ul a{display:block;padding:8px 12px;font:500 12px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:#aab2cf;text-decoration:none;border-radius:4px;white-space:nowrap}
+.nav ul a:hover,.nav ul a.on{color:#f2a65a}
 
 /* hero */
 .hero{position:relative;background:var(--sky);color:var(--sky-ink);overflow:hidden}
 #field{position:absolute;inset:0;width:100%;height:100%;display:block}
 .hero .wrap{position:relative;padding-block:clamp(72px,12vw,150px) clamp(56px,8vw,96px)}
-.aff{font:400 12px/1.6 var(--f-mono);letter-spacing:.06em;color:#86a3a8}
-.aff b{color:#5fd4c4;font-weight:500}
+.aff{font:400 12px/1.6 var(--f-mono);letter-spacing:.06em;color:#8f99bd}
+.aff b{color:#f2a65a;font-weight:500}
 h1{font:400 clamp(58px,11vw,132px)/.92 var(--f-display);letter-spacing:-.01em;margin:16px 0 26px}
-h1 em{font-style:italic;color:#5fd4c4}
-.kw{list-style:none;margin:0 0 34px;padding:0;display:flex;flex-wrap:wrap;gap:6px 0;max-width:46rem;font:400 italic clamp(19px,2.3vw,24px)/1.35 var(--f-display);color:#d2e2e3}
-.kw li:not(:last-child)::after{content:"·";margin:0 .55em;color:#56737a;font-style:normal}
+h1 em{font-style:italic;color:#f2a65a}
+.kw{list-style:none;margin:0 0 34px;padding:0;display:flex;flex-wrap:wrap;gap:6px 0;max-width:46rem;font:400 italic clamp(19px,2.3vw,24px)/1.35 var(--f-display);color:#cfd5ea}
+.kw li:not(:last-child)::after{content:"·";margin:0 .55em;color:#5f6a8f;font-style:normal}
 .cta{display:flex;flex-wrap:wrap;gap:10px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;font:500 13px/1 var(--f-mono);letter-spacing:.04em;text-decoration:none;border:1px solid rgba(255,255,255,.18);color:var(--sky-ink);background:rgba(255,255,255,.04)}
-.btn:hover{border-color:#5fd4c4;color:#5fd4c4}
-.btn.primary{background:#5fd4c4;color:#06201d;border-color:#5fd4c4}
-.btn.primary:hover{background:#8ae6da;color:#06201d}
+.btn:hover{border-color:#f2a65a;color:#f2a65a}
+.btn.primary{background:#f2a65a;color:#1a1206;border-color:#f2a65a}
+.btn.primary:hover{background:#ffbb75;color:#1a1206}
 
 /* sections */
 section.block{padding-block:clamp(56px,8vw,96px);border-bottom:1px solid var(--line)}
@@ -128,15 +128,6 @@ p{margin:0 0 16px;max-width:66ch}
 .copy:hover{border-color:var(--accent);color:var(--accent)}
 footer{padding-block:36px 48px;font:400 12px/1.6 var(--f-mono);color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
-
-
-/* type overrides: expanded grotesk display */
-h1{font-weight:800;font-stretch:125%;font-size:clamp(42px,8.6vw,108px);line-height:.95;letter-spacing:-.025em}
-h1 em,h2 em{font-style:normal}
-h2{font-weight:650;font-stretch:118%;font-size:clamp(28px,3.8vw,42px);line-height:1.1;letter-spacing:-.015em}
-.card h3{font-weight:650;font-stretch:112%;font-size:20px;line-height:1.25;letter-spacing:-.01em}
-.kw{font:400 clamp(16px,1.9vw,19px)/1.5 var(--f-body);letter-spacing:.005em}
-body{font-size:16.5px}
 </style>
 
 </head>
@@ -159,7 +150,7 @@ body{font-size:16.5px}
     <h1>Marko <em>Mićić</em></h1>
     <ul class="kw">
       <li>Intermediate-mass black holes</li>
-      <li>Dwarf galaxy interactions</li>
+      <li>Interacting dwarfs</li>
       <li>Galaxy evolution</li>
       <li>Hierarchical cosmology</li>
       <li>Gravitational lensing</li>
@@ -181,7 +172,7 @@ body{font-size:16.5px}
       <p>In a hierarchical universe, big things are assembled from small ones. Dwarf galaxies were the most common galaxies in the early Universe, and their mergers and interactions are where massive galaxies and the first supermassive black holes began to grow. I study that process at its low-mass end, where it can still be observed directly in the nearby and intermediate-redshift Universe.</p>
       <p>Much of my work asks how black holes grow when galaxies meet. I look for intermediate-mass black holes and faint AGN in dwarf galaxies, in dwarf–dwarf pairs and groups, and in the smaller partner of minor mergers, where simulations predict brief bursts of rapid growth. These systems connect the seed black holes of the early Universe to the supermassive black holes we see today.</p>
       <p>I also follow what interactions do to the galaxies themselves: when they trigger star formation, when they bury it in dust, and when they shut it down, and whether groups of dwarfs are bound structures on their way to building something larger. To reach the faintest black holes at cosmic noon, I use gravitational lensing by galaxy clusters to magnify sources that X-ray surveys would otherwise miss.</p>
-      <p>My work combines X-ray, optical and infrared data, mainly from Chandra, Hubble, JWST and Gemini, together with large-scale spectroscopic surveys.</p>
+      <p>My work combines X-ray, optical and infrared data, mainly from Chandra, Hubble, JWST, Gemini and DESI.</p>
     </div>
   </div>
 </section>
@@ -251,7 +242,7 @@ body{font-size:16.5px}
                 <radialGradient id="gB" r=".5"><stop offset="0" stop-color="#eef2ff"/><stop offset=".35" stop-color="#8fb2ff" stop-opacity=".7"/><stop offset="1" stop-color="#8fb2ff" stop-opacity="0"/></radialGradient>
                 <radialGradient id="gD" r=".5"><stop offset="0" stop-color="#ffd9b8"/><stop offset=".4" stop-color="#c0603a" stop-opacity=".8"/><stop offset="1" stop-color="#c0603a" stop-opacity="0"/></radialGradient>
                 <radialGradient id="gR" r=".5"><stop offset="0" stop-color="#e8b6a8"/><stop offset=".4" stop-color="#9a4a3e" stop-opacity=".55"/><stop offset="1" stop-color="#9a4a3e" stop-opacity="0"/></radialGradient>
-                <marker id="ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#56737a"/></marker>
+                <marker id="ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#5f6a8f"/></marker>
               </defs>
               <!-- separation axis -->
               <line x1="30" y1="190" x2="300" y2="190" stroke="var(--fig-dim)" marker-end="url(#ar)"/>
@@ -283,7 +274,7 @@ body{font-size:16.5px}
             </svg>
           </div>
           <div class="body">
-            <div class="topic">Dwarf galaxy interactions · galaxy evolution</div>
+            <div class="topic">Interacting dwarfs · galaxy evolution</div>
             <h3>DESI Interacting Dwarfs Survey</h3>
             <dl>
               <dt>Idea</dt><dd>Measure how dwarf–dwarf interactions change star formation across stellar mass (log M★ 6.5–9.5), redshift (out to z ≈ 1.5) and external tidal environment.</dd>
@@ -596,10 +587,10 @@ if("IntersectionObserver" in window){
     x.fillStyle=g;x.beginPath();x.arc(0,0,rx,0,6.283);x.fill();x.restore();
   }
   function nucleus(px,py,r,t){
-    x.save();x.strokeStyle="rgba(240,119,139,.7)";x.lineWidth=1;x.setLineDash([4,4]);x.lineDashOffset=-t*8;
+    x.save();x.strokeStyle="rgba(242,166,90,.7)";x.lineWidth=1;x.setLineDash([4,4]);x.lineDashOffset=-t*8;
     x.beginPath();x.arc(px,py,r,0,6.283);x.stroke();
     const pulse=.55+.45*Math.sin(t*2.2);
-    const g=x.createRadialGradient(px,py,0,px,py,7);g.addColorStop(0,`rgba(255,205,214,${.9*pulse})`);g.addColorStop(1,"rgba(240,119,139,0)");
+    const g=x.createRadialGradient(px,py,0,px,py,7);g.addColorStop(0,`rgba(255,214,160,${.9*pulse})`);g.addColorStop(1,"rgba(242,166,90,0)");
     x.fillStyle=g;x.beginPath();x.arc(px,py,7,0,6.283);x.fill();x.restore();
   }
   function frame(ms){
